@@ -1,7 +1,7 @@
-dbGetSrc <- function(save2df, src) {
+dbGetSrc <- function(src) {
 
   dbquery$string <-
     paste("SELECT * FROM ", src, sep = "")
 
-  dbQueryRun(save2df, dbquery$string)
+  dbGetQuery(dbconn, dbquery$string)
 }
