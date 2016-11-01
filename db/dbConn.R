@@ -6,12 +6,12 @@ library(RPostgreSQL)
 # Database settings -------------------------------------------------------
 
 dbset <- c()
-dbset$dns  <- "VIE_2013"
+dbset$dns  <- NULL
 dbset$host <- "localhost"
 dbset$port <- 5432
-dbset$name <- "VIE_2013"
-dbset$user <- "postgres"
-dbset$pwd  <- "keines"
+dbset$name <- NULL
+dbset$user <- NULL
+dbset$pwd  <- NULL
 dbset$drv  <- dbDriver("PostgreSQL")
 
 
